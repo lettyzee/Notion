@@ -1,113 +1,114 @@
 <!-- original : https://codepen.io/SeanNorton/pen/LWBXQL -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Licorice:wght@700&family=Bebas+Neue" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Licorice">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>greeting2</title>
 
     <style>
-
         /*CSS RESETS*/
 
-body{
-    background-color: #fff;
-    line-height: 1.6;
+        body {
+            background-color: #fff;
+            line-height: 1.6;
 
-}
+        }
 
-h1 {
-    margin-top: 0;
-}
+        h1 {
+            margin-top: 0;
+        }
 
 
-/*CSS START*/
+        /*CSS START*/
 
-.full-table {
-    display: table;
-    height: 100%;
-    width: 100%;
-}
+        .full-table {
+            display: table;
+            height: 100%;
+            width: 100%;
+        }
 
-.table-cell {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
+        .table-cell {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
 
-.card {
-    padding: 10px 25px 10px 25px;
-    border-radius: 10px;
-    background: #F1AC7C;
-    width: 85vw;
-    color: #fff;
-    display: inline-block;
-    box-shadow: 2px 2px 1px 0px #330835;
-}
+        .card {
+            padding: 10px 25px 10px 25px;
+            border-radius: 10px;
+            background: #F1AC7C;
+            width: 85vw;
+            color: #fff;
+            display: inline-block;
+            box-shadow: 2px 2px 1px 0px #330835;
+        }
 
-.card:hover {
-    margin-top: 2px;
-    box-shadow: none;
-}
+        .card:hover {
+            margin-top: 2px;
+            box-shadow: none;
+        }
 
-.clock {
-    display: inline;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2em;
-   
-}
+        .clock {
+            display: inline;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2em;
 
-.time {
-    display: inline;
-    min-width: 37px;
-}
+        }
 
-.colon {
-    font-size: 1.1em;
-    display: inline-block;
-}
+        .time {
+            display: inline;
+            min-width: 37px;
+        }
 
-.date {
-    display: inline;
-    min-width: 162px;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2em;
-    padding-right: 30px;
-}
-.greet{
-    
-    display:inline;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2rem;
-     padding-right: 30px;
-}
+        .colon {
+            font-size: 1.1em;
+            display: inline-block;
+        }
 
+        .date {
+            display: inline;
+            min-width: 162px;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2em;
+            padding-right: 30px;
+        }
+
+        .greet {
+
+            display: inline;
+            font-family: 'Licorice';
+            font-size: 2rem;
+            padding-right: 30px;
+        }
     </style>
 </head>
+
 <body>
     <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:400,700" rel="stylesheet">
 
-<div class="full-table">
-  <div class="table-cell">
-    
-    <div class="card">
-        <div class="greet" id="greet"></div>
-      <div class="date" id="date"></div>
-      <div class="clock">
-        <div class="time" id="hour"></div>
-        <div class="colon">:</div>
-        <div class="time" id="min"></div>
-        <div class="colon">:</div>
-        <div class="time" id="sec"></div>
-      </div>
-    </div>
-    
-  </div>
-</div>
+    <div class="full-table">
+        <div class="table-cell">
 
-<script>
+            <div class="card">
+                <div class="greet" id="greet"></div>
+                <div class="date" id="date"></div>
+                <div class="clock">
+                    <div class="time" id="hour"></div>
+                    <div class="colon">:</div>
+                    <div class="time" id="min"></div>
+                    <div class="colon">:</div>
+                    <div class="time" id="sec"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
     function date() {
 var today = new Date();
 document.getElementById('date').innerHTML = today.toDateString();
@@ -165,7 +166,8 @@ setTimeout(dateTime, 500);
 
 dateTime()
 // END
-</script>
+    </script>
 
 </body>
+
 </html>
